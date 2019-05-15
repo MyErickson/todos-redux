@@ -56,7 +56,7 @@
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
-    "react-redux": "*",
-    "redux": "*"
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1"
   }
 }

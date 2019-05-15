@@ -1,26 +1,8 @@
-/*
- * Npm import
- */
 import { createStore } from 'redux';
+import { combineReducers } from 'redux';
+import * as reducers from './reducers';
 
-/*
- * Local import
- */
-// Reducer
-import reducer from 'src/store/reducer';
+const todosReducer = combineReducers(reducers);
+const store = createStore(todosReducer);
 
-/*
- * Code
- */
-const devTools = [];
-if (window.devToolsExtension) {
-  devTools.push(window.devToolsExtension());
-}
-
-// createStore
-const store = createStore(reducer, ...devTools);
-
-/*
- * Export
- */
 export default store;
